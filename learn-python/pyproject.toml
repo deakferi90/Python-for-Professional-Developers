@@ -1,0 +1,17 @@
+[project]
+name = "learn-python"
+version = "0.1.0"
+description = "Learn Python"
+readme = "README.md"
+authors = [
+    { email = "deak_ferenc_jozsef@yahoo.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+learn-python = "learn_python:run"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
