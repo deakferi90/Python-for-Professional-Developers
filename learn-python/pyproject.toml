@@ -7,7 +7,9 @@ authors = [
     { email = "deak_ferenc_jozsef@yahoo.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pydantic>=2.14.4",
+]
 
 [project.scripts]
 learn-python = "learn_python:run"
@@ -15,3 +17,8 @@ learn-python = "learn_python:run"
 [build-system]
 requires = ["uv_build>=0.13.9,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+]
