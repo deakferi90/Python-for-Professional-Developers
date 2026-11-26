@@ -22,3 +22,7 @@ print(sorted_uns)
 uns.sort()
 
 print(uns)
+
+tuples = (1, 2, 3, 4, 5)
+
+print(tuples[0])
