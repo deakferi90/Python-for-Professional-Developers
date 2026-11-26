@@ -25,4 +25,7 @@ print(uns)
 
 tuples = (1, 2, 3, 4, 5)
 
+for i in tuples:
+    print(i)
+
 print(tuples[0])
