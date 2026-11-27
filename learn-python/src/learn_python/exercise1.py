@@ -9,7 +9,7 @@ class TaskStatus(StrEnum):
     done = "done"
 
 
-def is_overdue(due_date, status):
+def is_overdue(due_date: date | None, status: TaskStatus):
     if status == TaskStatus.done:
         return False
 
@@ -19,7 +19,7 @@ def is_overdue(due_date, status):
     return due_date < date.today()
 
 
-def next_status(current):
+def next_status(current: TaskStatus) -> TaskStatus:
     match current:
         case TaskStatus.planned:
             return TaskStatus.in_progress
